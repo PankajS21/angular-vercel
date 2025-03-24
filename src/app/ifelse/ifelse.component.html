@@ -1,0 +1,66 @@
+<!-- <div>Learning if else</div>
+
+@if(mainDiv){
+    <div style="background: red;">Show and Hide this div</div>
+}
+<button (click)="hideDiv()">Hide</button>
+<button (click)="showDiv()">Show</button>
+<button (click)="toggle()">{{mainDiv?"Make it false":"Make it true"}}</button>
+
+
+<hr>
+
+@if(mainDiv){
+    <h2>Main is true</h2>
+}@else{
+    <h2>Main is false</h2>
+} -->
+
+
+
+<!-- Else If -->
+
+<!-- <button (click)="handleClick(1)">Red</button>
+<button (click)="handleClick(2)">Blue</button>
+<button (click)="handleClick(3)">Green</button>
+<button (click)="handleClick(48)">Pink</button>
+
+<input type="number" (input)="handleChange($event)">
+
+
+@if(color==1){
+<div style="background: red;">Red</div>
+}@else if(color==2){
+<div style="background: blue;">Blue</div>
+}@else if(color==3){
+<div style="background: green;">Green</div>
+}@else{
+<div style="background: pink;">Pink</div>
+} -->
+
+
+
+<!-- Switch Case -->
+
+<button (click)="handleClick('red')">Red</button>
+<button (click)="handleClick('green')">Green</button>
+<button (click)="handleClick('yellow')">Yellow</button>
+<button (click)="handleClick('black')">Black</button>
+
+<input type="text" (input)="handleChange($event)">
+
+
+@switch(color){
+@case ('red'){
+<h1 style="background-color: red;">Red</h1>
+}
+@case ('green'){
+<h1 style="background-color: green;">Green</h1>
+}
+@case ('yellow'){
+<h1 style="background-color: yellow;">Yellow</h1>
+}
+@default{
+<h1 style="background-color: black;">Black</h1>
+}
+}

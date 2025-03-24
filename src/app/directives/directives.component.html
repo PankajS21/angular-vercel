@@ -1,0 +1,61 @@
+<!-- ngIf directive -->
+
+<!-- <p *ngIf="toggle">Show Paragraph</p>
+
+
+<a *ngIf="login; else anotherBlock;" href="/">login</a><br />
+<ng-template #anotherBlock>
+    <a href="/">logout</a>
+</ng-template>
+
+<button (click)="handleClick()">Login/Logout</button>
+
+
+<p>{{count}}</p>
+<p *ngIf="count==0">Heading 0</p>
+<p *ngIf="count==1">Heading 1</p>
+<p *ngIf="count==2">Heading 2</p>
+<p *ngIf="count==3">Heading 3</p>
+<p *ngIf="count==4">Heading 4</p>
+<button (click)="increase()">Increase</button> -->
+
+
+
+
+<!-- ngFor directive -->
+
+
+<!-- <ul>
+    <li *ngFor="let student of students">
+        {{student}}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let student of studentsData">
+        {{student.name}}, {{student.age}}, {{student.course}},
+    </li>
+</ul> -->
+
+
+
+
+
+
+<!-- ngSwitch directive -->
+
+
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="background-color: red;">Red Colour</h1>
+    <h1 *ngSwitchCase="'green'" style="background-color: green;">Green Colour</h1>
+    <h1 *ngSwitchCase="'yellow'" style="background-color: yellow;">Yellow Colour</h1>
+    <h1 *ngSwitchCase="'blue'" style="background-color: blue;">Blue Colour</h1>
+    <h1 *ngSwitchCase="'pink'" style="background-color: pink;">Pink Colour</h1>
+    <h1 *ngSwitchDefault>No color matched!</h1>
+</div>
+
+<button (click)="changeColor('red')">Red</button>
+<button (click)="changeColor('green')">Green</button>
+<button (click)="changeColor('yellow')">Yellow</button>
+<button (click)="changeColor('blue')">Blue</button>
+<button (click)="changeColor('pink')">Pink</button>

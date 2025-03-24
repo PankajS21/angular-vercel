@@ -1,0 +1,16 @@
+<p>forloop works!</p>
+
+@for(user of users; track user){
+<h1>{{user}}</h1>
+}
+
+<h2>
+    @for(student of students; track student.name; let id=$index){
+    {{id+1}}
+    {{student.name}}
+    {{student.age}}
+    {{student.course}}
+    <button (click)="getAge(student.age)">Get Student age</button>
+    <br>
+    }
+</h2>

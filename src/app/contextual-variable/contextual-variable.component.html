@@ -1,0 +1,13 @@
+<p>contextual-variable works!</p>
+@for(user of users; track user;){
+    @if($even){
+        <h1 style="background-color: red;">User id is {{$index}} and name is {{user}}</h1>
+    }@else if($odd){
+        <h1 style="background-color: blue;">User id is {{$index}} and name is {{user}}</h1>
+    }
+{{$count}}
+{{$first}}
+{{$last}}
+}@empty(){
+    <h1>There is no user!</h1>
+}

@@ -1,0 +1,161 @@
+<!-- <app-header></app-header>
+
+<h2>Heyy, My name is {{title}}</h2>
+
+<app-login></app-login>
+
+<button (click)="handleClick()">Click</button>
+<button (click)="callBoth()">Call Both</button>
+
+<app-counter></app-counter> -->
+
+<!-- <app-events></app-events> -->
+
+<!-- <h1>Learning about styles</h1>
+<h2>Internal Css</h2>
+<h3>Internal Css 2</h3>
+<button>Click</button> -->
+
+
+<!-- If Else -->
+
+<!-- <app-ifelse></app-ifelse> -->
+
+<!-- <app-forloop></app-forloop> -->
+
+<!-- <app-signals></app-signals> -->
+
+<!-- <app-effects></app-effects> -->
+
+<!-- <app-contextual-variable></app-contextual-variable> -->
+
+
+<!-- <app-twowaybinding></app-twowaybinding> -->
+
+<!-- <app-todolist></app-todolist> -->
+
+<!-- <app-dynamic-style></app-dynamic-style> -->
+
+
+<!-- <app-directives></app-directives> -->
+
+
+<!-- Routing -->
+
+<!-- <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/contact">Contact Us</a></li>
+    <li><a routerLink="/logout">Logout</a></li>
+</ul>
+
+<router-outlet /> -->
+<!-- <h1>app</h1>
+<app-logout></app-logout> -->
+
+
+
+
+<!-- <app-home></app-home> -->
+
+<!-- <app-dynamic-routes></app-dynamic-routes>
+
+<router-outlet /> -->
+
+<!-- <app-reactive-forms></app-reactive-forms> -->
+
+
+<!-- <app-props [name]="userName" [course]="courseName"></app-props>
+
+<select #selectedUser (change)="changeUser(selectedUser.value)">
+    <option value="Rohan">Rohan</option>
+    <option value="Mohit">Mohit</option>
+    <option value="Nitish">Nitish</option>
+    <option value="Arun">Arun</option>
+</select>
+
+@for(user of data; track user;){
+    <app-props [users]='user'></app-props>
+} -->
+
+
+
+<!-- <app-lifting-state-up (sendData)="handleUsers($event)"></app-lifting-state-up>
+
+@for(data of incomingData; track data){
+    <h1>My name is {{data}}</h1>
+} -->
+
+
+
+
+<!-- Pipes -->
+
+<!-- <app-pipes></app-pipes> -->
+
+<!-- <h1>{{amount | customPipes:5}}</h1>
+<h1>{{amount | customPipes:10}}</h1>
+<h1>{{amount | customPipes}}</h1> -->
+
+<!-- {{counter}}
+<button (click)="onClick()">Click</button>
+<div *ngIf="counter!=5">
+    <app-lifecycle-methods [count]="counter" #lifecycle></app-lifecycle-methods>
+</div> -->
+
+
+
+<!-- Services -->
+<!-- <button (click)="loadData()">loadData</button>
+@for(data of storeProduct;track data){
+<h1>{{data.name}}</h1>
+<h1>{{data.price}}</h1>
+} -->
+
+
+<!-- {{storeProduct.name}} -->
+
+
+<!-- @for(data of allData;track data.id){
+    <ul>
+        <li>{{data.id}}</li>
+        <li>{{data.title}}</li>
+        <li>{{data.body}}</li>
+    </ul>
+
+} -->
+
+<!-- @for(user of users;track user.name){
+<ul>
+    <li>{{user.id}}</li>
+    <li>{{user.name}}</li>
+    <li>{{user.course}}</li>
+    <li><button (click)="deleteUser(user.id)">Delete User</button></li>
+    <li><button (click)="updateUser(user.id)">Update User</button></li>
+</ul>
+} -->
+
+
+
+<!-- Post Data -->
+
+<!-- <form #saveData="ngForm">
+    <input type="text" placeholder="enter name" name="name" [ngModel]="populateData?.name">
+    <br><br>
+    <input type="text" placeholder="enter course" name="course" [ngModel]="populateData?.course">
+    <br><br>
+    <button type="button" (click)="pushData(saveData.value)">
+        @if(!populateData){
+            Add User
+        }@else{
+            Update User
+        }
+    </button>
+
+</form> -->
+
+<!-- <app-lazy-load></app-lazy-load> -->
+
+<a routerLink="/lazyload">Go to Admin</a>
+<router-outlet></router-outlet>
+

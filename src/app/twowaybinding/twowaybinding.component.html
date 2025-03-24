@@ -1,0 +1,10 @@
+<p>twowaybinding works!</p>
+
+
+<!-- <input type="text" placeholder="Enter your name" (input)="handleChange($event)"> -->
+
+<input type="text" [(ngModel)]="name" placeholder="Enter your name">
+<input type="text" [(ngModel)]="age" placeholder="Enter your name">
+
+<h1>{{name}}</h1>
+<h1>{{age}}</h1>

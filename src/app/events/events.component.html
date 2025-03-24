@@ -1,0 +1,31 @@
+<!-- <p>events works!</p>
+
+<button class="btnClick" (click)="handleClick($event)">Click</button>
+
+<h1 style="height: 200px;width: 200px;background: red;" (mouseenter)="handleClick($event)">Checking Mouse Enter</h1>
+<h1 style="height: 200px;width: 200px;background: blue;" (mouseleave)="handleClick($event)">Checking Mouse Enter</h1>
+
+<input class="onchangeEvent" name="onn" value="onnnnnn" type="text" placeholder="input" (input)="handleClick($event)">
+<input type="text" placeholder="focus" (focus)="handleClick($event)">
+<input type="text" placeholder="blur" (blur)="handleClick($event)"> -->
+
+
+<!-- <p>Get Value</p>
+
+<h1>My name is {{showName}}</h1>
+
+<input type="text" (input)="handleChange($event)">
+
+<button (click)="showNameFunc()">Get Name</button> -->
+
+<!-- <p>Set name</p>
+<input type="text" value={{name}} (input)="handleChange($event)">
+<button (click)="setNameFunc()">Set Name</button> -->
+
+
+<!-- Template reference variable -->
+
+<input type="text" value={{name}} #myElement/>
+
+<button (click)="getValue(myElement.value)">Get Value</button>
+<button (click)="setValue(myElement)">Set Value</button>

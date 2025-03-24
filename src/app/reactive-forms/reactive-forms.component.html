@@ -1,0 +1,98 @@
+<!-- <p>reactive-forms works!</p> -->
+
+<!-- FormControl -->
+
+<!-- <form action="">
+    <input type="text" placeholder="Enter your name" [formControl]="name" /><br />
+    <input type="text" placeholder="Enter Password" [formControl]="password" /><br>
+    <button type="button" (click)="getValues()">Login</button>
+
+    <h1>{{name.value}}</h1>
+    <h1>{{password.value}}</h1>
+</form> -->
+
+
+<!-- FormGroup -->
+
+<!-- <form action="" [formGroup]="profile">
+    <input type="text" placeholder="Enter your name" formControlName="name"/><br />
+    <input type="text" placeholder="Enter password" formControlName="password"/><br>
+    <input type="text" placeholder="Enter email" formControlName="email"/><br>
+    <button type="button" (click)="onSubmit()" type="button">Login</button>
+    <button type="button" (click)="setValue()" type="button">Set Value</button>
+</form>
+
+<h1>{{this.profile.value.name}}</h1>
+<h1>{{this.profile.value.password}}</h1>
+<h1>{{this.profile.value.email}}</h1> -->
+
+
+
+
+<!-- Validation in forms -->
+
+
+<!-- <form action="" [formGroup]="profileForm">
+    <input type="text" placeholder="Enter your name" formControlName="name"/>
+    <span *ngIf="name?.hasError('required')">Please enter valid name</span>
+    <span class="error" *ngIf="name?.invalid && (name?.dirty || name?.touched)">Provide your name</span>
+    <br><br>
+    <input type="text" placeholder="Enter password" formControlName="password"/>
+    <span *ngIf="password?.hasError('required')">Please enter password</span>
+    <span *ngIf="password?.invalid && (password?.dirty || password?.touched)">Password should be atleast 5 characters long</span>
+    <br><br>
+    <input type="text" placeholder="Enter email" formControlName="email"/>
+    <span *ngIf="email?.hasError('required')">Please enter email</span>
+    <span *ngIf="email?.invalid && (email?.dirty || email?.touched)">Please enter correct email</span>
+    <br><br>
+    <button type="button" (click)="onSubmit()" type="button">Login</button>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+<!-- Template driven Forms -->
+
+<!-- <h1>Template driven forms</h1>
+
+<form #templateForm="ngForm">
+    <input type="text" name="name" ngModel>
+    <br>
+    <input type="text" name="email" ngModel>
+    <br>
+    <input type="range" name="range" ngModel>
+    <br>
+    <button type="button" (click)="submitData(templateForm.value)">Add User</button>
+
+</form>
+
+{{userData.name}}
+{{userData.email}}
+{{userData.range}} -->
+
+
+
+<h1>Form validation in Template driven forms</h1>
+
+<form #validateForm="ngForm" (ngSubmit)="submitData(validateForm.value)">
+    <input #name="ngModel" minlength="15" required type="text" name="name" ngModel>
+    <span *ngIf="name.invalid && name.touched">Please enter name</span>
+    <br>
+    <select #gender="ngModel" required name="gender" ngModel>
+        <option selected>Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+    <span *ngIf="gender.invalid && gender.touched">Please select gender</span>
+    <br>
+    <button [disabled]="validateForm.invalid">Click</button>
+</form>
+
+<!-- {{validateForm.value.name}}
+{{validateForm.value.gender}} -->
